@@ -1,0 +1,23 @@
+<div class="container mt-5 mr-center">
+    <div class="columns is-centered is-mobile">
+        <div class="column is-three-quarters-mobile is-two-thirds-tablet is-half-desktop">
+            <form class="box" action="/games/edit/{{game.id}}" method="POST">
+                <div class="field">
+                    <label class="label">Nombre de sugerencia de juego</label>
+                    <div class="control">
+                        <input name="name" class="input" type="text" value="{{game.name}}" placeholder="Titulo de sugerencia">
+                    </div>
+                </div>
+
+                <div class="field">
+                    <label class="label">Descripción</label>
+                    <div class="control">
+                        <textarea name="description" rows="2" class="input" placeholder="Description....">{{game.description}}</textarea>
+                    </div>
+                </div>
+
+                <button class="button is-primary">Guardar</button>
+            </form>
+        </div>
+    </div>
+</div>
