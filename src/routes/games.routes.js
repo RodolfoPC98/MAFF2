@@ -14,6 +14,7 @@ router.post('/add', async (req, res) => {
         description
     };
     await pool.query('INSERT INTO games set ?', [newGame]);
+    req.flash('success', 'Game saved successfully');
     res.redirect('/games');
 });
 
